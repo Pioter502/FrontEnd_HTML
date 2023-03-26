@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab HTML5</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <style>
-    table, th, td {
-        border:1px solid black;
+
+    body{
+        background-color: darkgrey;
+        font-size: 15px;
+        height: max-content;
+        width: auto;
     }
+    h1{
+        font-family: "Adobe Caslon Pro",sans-serif;
+        font-size: 50px;
+        color: Red;
+        position: center;
+        text-align: center;
+    }
+    nav{
+        font-style: italic;
+        position: center;
+        margin: 10px;
+        text-align: end;
+    }
+    article{
+        text-align: center;
+        padding: 10px;
+    }
+    table, th, td {
+        border-style: groove;
+        border-width: 5px;
+    }
+    aside{
+
+    }
+    #myid1{
+        color: green;
+        font-size: 20px;
+    }
+    .material-icons{
+        font-size: 100px;
+        color: lightblue;
+        opacity: 0.5;
+    }
+
 </style>
+
 <body>
 <h1>Lab HTML5</h1>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+<i class="material-icons">cloud</i>
+
+
 <nav>
     <ul>
         <a href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
@@ -20,7 +69,7 @@
 <section>
     <article>
         <h2>Przykladowy artykul</h2>
-        <p>Tutaj znajdziemy przykładowy tekst</p>
+        <p id="myid1">Tutaj znajdziemy przykładowy tekst</p>
     </article>
 
     <article>
@@ -37,6 +86,7 @@
                 <td>Fyderek</td>
             </tr>
         </table>
+
     </article>
 </section>
 <aside>
