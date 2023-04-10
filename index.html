@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab HTML5</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <style>
-
     body{
         background-image: url(".idea/1.jpg");
         font-size: 15px;
@@ -22,73 +22,90 @@
     }
     nav{
         font-style: italic;
-        position: center;
         margin: 10px;
-        text-align: end;
+        text-align: left;
     }
     article{
-        text-align: center;
+        text-align: left;
         padding: 10px;
     }
     table, th, td {
         border-style: groove;
         border-width: 5px;
+        font-weight: bold;
     }
     aside{
 
     }
     #myid1{
-        color: green;
+        color: RED;
         font-size: 20px;
-    }
-    .material-icons{
-        font-size: 100px;
-        color: lightblue;
-        opacity: 0.5;
+        font-weight: bolder;
     }
     #linki{
         font-size: 20px;
 
+    }
+    footer{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: gray;
+    }
+    #zdjecia_w_tab{
+        height: 400px;
 
     }
-
 </style>
 
 <body>
+
 <h1>Lab HTML5</h1>
-
-
 
 <nav>
     <div id="linki">
     <ul>
         <a href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
         <a href="https://sake.wszib.edu.pl/">Sake</a>
+
     </ul>
     </div>
 </nav>
+
 <section>
-    <article>
-        <h2>Przykladowy artykul</h2>
-        <p id="myid1">Tutaj znajdziemy przykładowy tekst</p>
-    </article>
 
     <article>
-        <h2>Przykladowy obrazek</h2>
-        <img src="https://suszi.wszib.edu.pl/suszi-web/img/ikony_eu_suszi.png"/>
+        <h2>Przykladowy artykul</h2>
+
+        <p id="myid1"><i class="fa fa-bars"></i>Słonie afrykańskie są uważane za zwierzęta obdarzone wysoką inteligencją. Mózg słonia waży ok. 6000 g.</p>
+        <p id="myid1"><i class="fa fa-bars"></i>Przeciętna długość życia słonia wynosi około 65–70 lat w stanie dzikim i do 80 lat w niewoli. Notowano przypadki słoni osiągających ponad 80 lat.</p>
+        <p id="myid1"><i class="fa fa-bars"></i>Najstarsze skamieliny słoni afrykańskich pochodzą ze środkowego pliocenu.</p>
+        <p id="myid1"><i class="fa fa-bars"></i>Mimo że słoń afrykański jest właściwie zwierzęciem sawanny, potrafi przystosować się do innych warunków, dzięki czemu może żyć na obszarach położonych na południe od Sahary. Osiedla się jednak tylko tam, gdzie znajdują się źródła wody pitnej i miejsca do kąpieli.</p>
+        <p id="myid1"><i class="fa fa-bars"></i>Największy zarejestrowany cios słonia mierzył 3,1 m i ważył niemal 105 kg</p>
     </article>
 
     <article>
         <h2>Przykladowa tabelka</h2>
         <table style="width:100%">
             <tr>
-                <td>Szymon</td>
-                <td>Jasnowidz</td>
-                <td>Fyderek</td>
+                <td>Słoń podążający do wodopoju</td>
+                <td>Słonie zjadające korę drzewa</td>
+                <td>Zasięg występowania</td>
+            </tr>
+            <tr>
+                <td><img id="zdjecia_w_tab" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Elephant_in_Akagera_National_Park.jpg"</td>
+                <td><img id="zdjecia_w_tab" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Elephants_eating_%28Loxodonta_Africana%29_%28Kruger_National_Park%2C_2002%29_03.jpg"</td>
+                <td><img id="zdjecia_w_tab" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/African_Elephant_distribution_map_without_borders.svg"</td>
             </tr>
         </table>
 
     </article>
+
+    <article>
+        <h2>Przykladowy obrazek</h2>
+        <a href="https://artemis.wszib.edu.pl/~dereszow/kloda.txt""><img src="https://suszi.wszib.edu.pl/suszi-web/img/ikony_eu_suszi.png"/></a>
+    </article>
+
 </section>
 <aside>
     <lu>
@@ -104,6 +121,7 @@
 <footer>
     <p>Piotr Górnisiewicz</p>
     <p>1K333-PO</p>
+    <p> Aby odkryć ciekawostkę kliknij na baner funduszy europejskich</p>
 </footer>
 
 </body>
