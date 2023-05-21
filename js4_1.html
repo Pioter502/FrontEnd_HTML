@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zad 2</title>
+</head>
+<body>
+<label for="rows">Wiersze</label>
+<input id="rows" type="text">
+<label for="columns">Kolumny</label>
+<input id="columns" type="text">
+<button id="print" onclick="printTable()">Rysuj</button>
+</body>
+<script>
+    function printTable() {
+        var existingTable = document.getElementById('generatedTable')
+        if (existingTable !== null) {
+            document.body.removeChild(existingTable)
+        }
+        var rowsEl = document.getElementById('rows')
+        var rowsCount = rowsEl.value
+        if (isNaN(rowsCount)) {
+            alert(`rowsCount is not a numer = ${rowsCount}`)
+            return
+        }
+        var columnsEl = document.getElementById('columns')
+        var columnsCount = columnsEl.value
+        if (isNaN(columnsCount)) {
+            alert(`columnsCount is not a numer = ${rowsCount}`)
+        }
+        var table = document.createElement('table')
+        table.id = 'generatedTable'
+        document.body.append(table)
+        for (var i = 1; i < parseInt(rowsCount) + 1; i++) {
+            var row = document.createElement('tr')
+            table.append(row)
+            for (var j = 1; j < parseInt(columnsCount) + 1; j++) {
+                var cell = document.createElement('td')
+                cell.innerText = (i * j)
+                row.append(cell)
+            }
+        }
+    }
+</script>
+</html>
