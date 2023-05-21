@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+<div>Div</div>
+<button>Klik</button>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+<script>
+    $(function () {
+        $("button").click(function () {
+            // $("div").append('Text')
+            // $("div").prepend('Text')
+            // $("div").after('Text')
+            $("div").before('Text')
+            $("ul").remove()
+            // $("ul").empty()
+            $("ul").append('<li>1</li>').css("background-color", "blue")
+        })
+    })
+</script>
+</html>

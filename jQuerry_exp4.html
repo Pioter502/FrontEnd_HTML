@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<p>Tekst <b>pogrubiony</b>.</p>
+<button id="text">Text</button>
+<button id="html">Html</button>
+<p>Name: <input type="text" value="Paweł Pustelnik"></p>
+<button id="val">Val</button>
+<p id="pset">1</p>
+<button id="set">Set</button>
+<ul>
+    <li>item number x</li>
+    <li>item number y</li>
+    <li>item number z</li>
+</ul>
+</body>
+<script>
+    $("#text").click(function () {
+        console.log($("p").text());
+    })
+    $("#html").click(function () {
+        console.log($("p").html());
+    })
+    $("#val").click(function () {
+        console.log($("input").val())
+    })
+    $("#set").click(function () {
+        $("#pset").text('Nowy tekst')
+        // $("#pset").text(function (i, old) {
+        //     return old + 1
+        // })
+    })
+
+    $( "ul li" ).text(function( index, oldVal ) {
+        console.log(oldVal)
+        return "item number " + ( index + 1 );
+    });
+</script>
+</html>
